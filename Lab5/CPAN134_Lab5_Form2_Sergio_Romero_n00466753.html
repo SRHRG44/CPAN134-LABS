@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+    <style>
+        form {
+            padding-left: 50px;
+        }
+        p {
+            text-align: left;
+        }
+        lable {
+            width:100px;
+        display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <p>Payment</p>
+    <form action="/index.html">
+        <lable for="chname">Card Holder Name: </lable>
+        <input type="text" name="Card Holder Name"><br><br>
+        <lable for="cnum">Card Number: </lable>
+        <input type="text" name="Card Number"><br><br>
+        <label for="Phone Number">Expiry Date: </label>
+        <select name="Month" id="Month">
+            <option>Select an option</option>
+            <option value="January">Jan</option>
+            <option value="Febuary">Feb</option>
+            <option value="March">Mar</option>
+            <option value="April">Apr</option>
+            <option value="May">May</option>
+            <option value="June">Jun</option>
+            <option value="July">Jul</option>
+            <option value="Aug">Aug</option>
+            <option value="Sept">Sept</option>
+            <option value="Oct">Oct</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+        </select>
+        <select name="Year" id="Year" style="display: ruby;">
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+        </select>
+        <br><br>
+        <lable for="CVV">CVV: </lable>
+        <input type="text" name="CVV">
+        <br><br>
+        <input type="checkbox" name="Save" id="Save">
+        <label for="Save">Save this Card?</label>
+        <br><br>
+        <button type="submit"><img src="pay-now-button_cropped.jpg" width="100" height="40" alt="Pay Now"></button>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 5</title>
+    <script src="https://www.google.com/recaptcha/api/js" async defer></script>
+    <style>
+        .bordered {
+            width: 400px;
+            height: 900px;
+            padding: 20px;
+            border: 25px solid rgb(14, 184, 210);
+        }
+        input[type=text] {
+            border: 2px solid red;
+            border-radius: 4px;
+        }
+        input[type=date] {
+            border: 2px solid red;
+            border-radius: 4px;
+        }
+        body {
+            color: rgb(166, 20, 20);
+        }
+        form {
+            padding: 10px;
+            max-width: 1000px;
+            margin: auto;
+
+        }
+        label {
+            display: inline-block;
+            justify-content: left;
+            text-align: left;
+            margin-right: 40px;
+        }
+        div {
+            display: inline-block;
+        }
+        button {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="bordered">
+    <div class="form">
+    <form action="https://github.com/SRHRG44/CPAN134-LABS" method="post">
+        <caption><h2>Student Registration Form</h2></caption>
+    <div>
+        <lable for="FirstName">First Name: </lable>
+        <input type="text" name="First Name"><br><br>
+    </div>
+    <div>
+        <lable for="LastName">Last Name: </lable>
+        <input type="text" name="Last Name"><br><br>
+    </div>
+    <div>
+        <lable for="Gender">Gender: </lable>
+
+        <input type="radio" name="sex" id="male" value="male">
+        <lable for="Male">Male</lable>
+
+        <input type="radio" name="sex" id="female" value="female">
+        <label for="Female">Female</label>
+
+        <input type="radio" name="sex" id="other" value="other">
+        <label for="Other">Other</label>
+    </div> 
+    <br>
+    <div>
+        <lable for="Age">Age: </lable>
+        <input type="text" name="Enter your Age"><br><br>
+    </div>
+    <div>
+        <lable>Date of Birth: </lable>
+        <input type="date" name="DOB"><br><br>
+    </div>
+    <div>
+        <lable for="Email">E-Mail: </lable>
+        <input type="text" name="Enter your Email"><br><br>
+    </div>
+    <div>
+        <lable for="Password">Enter your Password: </lable>
+        <input type="text" name="Enter a Password"><br><br>
+    </div>
+    <div>
+        <lable for="ConformPassword">Confirm your Password: </lable>
+        <input type="text" name="Confirm your  Password"><br><br>
+    </div>
+    <div>
+        <label for="PhoneNumber";>Phone Number: </label>
+        <select name="Phone" id="Phone" style="width: fit-content;">
+            <option>(  )</option>
+            <option value="416">416</option>
+            <option value="905">905</option>
+            <option value="647">647</option>
+        </select>
+        <input type="text" name="Enter Phone Number"><br><br>
+    </div>
+    <div>
+        <label for="Address">Address</label>
+        <textarea name="Enter your Address" id="adress" cols="30" rows="2"></textarea> <br><br>
+    </div>
+    <div>
+        <label for="location">Province: </label>
+        <select name="Province" id="Province">
+            <option>Select an option</option>
+            <option value="Ontario">ON</option>
+            <option value="Alberta">AB</option>
+            <option value="Vancouver">BC</option>
+            <option value="Quebec">QC</option>
+            <option value="Manitoba">Mb</option>
+            <option value="Saskatchewan">SK</option>
+            <option value="Newfoundland">NL</option>
+            <option value="New Brunswick">NB</option>
+            <option value="Nova Scotia">NS</option>
+            <option value="Prince Edward Island">PEI</option>
+        </select>
+    </div><br><br>
+    <div>    
+        <lable for="PIN">Enter PIN Code: </lable>
+        <input type="text" name="Enter a PIN Code"><br><br>
+    </div>
+    <div>
+        <label for="Hobbies">Hobbies:</label>
+    
+        <input type="checkbox" name="Hobbiy 1" id="Music">
+        <label for="">Music</label>
+    
+        <input type="checkbox" name="Hobbiy 2" id="Movies">
+        <label>Movies</label>
+    <br>
+        <input type="checkbox" name="Hobbiy 3" id="Sports">
+        <label>Sports</label>
+
+        <input type="checkbox" name="Hobbiy 4" id="Travel">
+        <label>Travel</label>
+    </div>
+    <br><br>
+    <div>
+        <label for="Photo">Upload a Photo</label><span style="color: red; text-align: center;">*MAX size 100kb*</span><input type="file"  name="Photo" id="fileInput" accept=".jpg, .txt, .pdf, .docx">
+    </div>
+    <br><br>
+    <div>    
+        <input type="checkbox" name="declaration" id="declaration">
+        <label style="color: black;">I hereby declare that the above information provided is true and correct</label>
+    </div>
+    <br><br>
+    <div>
+        <input type="text" name="name" placeholder="name">
+        <div class="g-recatcha" data-sitekey="6Lfwy20pAAAAAJCWVHxFOcLxFw6KHwJ8cP--XRMp"></div>
+    </div>
+    <br><br>
+</div>
+        <button type="submit"><img src="submit button.jpg" width="150" height="50" alt="submit"></button><button type="reset"><img src="reset button 2.jpeg" width="150" height="50" alt="reset"></button>
+    
+    </form>
+    
+</div>
+</body>
+</html>
+
+
+
