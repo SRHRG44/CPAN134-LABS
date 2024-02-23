@@ -1,0 +1,49 @@
+.body {
+    font-size: 100%;
+    margin-left: 2em;
+    margin-right: 2em; 
+}
+    
+.header {
+    padding-bottom: .75em;
+}
+    
+.h1 {
+    font-size: 200%;
+    margin-bottom: 0; 
+}
+
+.a:link {
+    color: rgb(124, 17, 17);
+}
+
+.a:hover {
+    color: green;
+}
+
+.a:focus {
+    color: black;
+}
+
+.main p :first-child {
+    font-weight: bold;
+}
+
+.main p :first-child::first-letter {
+    font-size: 400%;
+}
+
+.footer {
+    font-size: 80%; 
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: right; 
+    padding-bottom: 15px;
+}
+
+.img {
+    float: left; 
+    margin-right: 5em;
+}
