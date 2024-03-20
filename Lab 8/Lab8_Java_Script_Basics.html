@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , height=device-height, user-scalable=no , maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <h1>JAVA SCRIPT BASICS</h1>
+    <p>find all JavaScript Lab 6 answers in order 1-6:</p>
+    Question 1
+    <p id="demo1"></p>
+    Question 2
+    <p id="demo2"></p>
+    Question 3
+    <p id="demo3"></p>
+    Question 4
+    <p id="demo4"></p>
+    Question 5a
+        <p>
+        Click the button to calculate x.
+        <button onclick="JavaConversionCoercionFunction()">Try it</button>
+        </p>
+        <p>
+        Enter first number:
+        <input type="text" id="txt1" name="text1" value="1">
+        Enter second number:
+        <input type="text" id="txt2" name="text2" value="2">
+        </p>
+    <p id="demo5a"></p>
+    Question 5b
+    <p>
+        How old are you? Enter age below and click to se what happens:
+        <button onclick="JavaConversionCoercionFunction2()">Click Here</button>
+        </p>
+        <p>
+        Enter your age:
+        <input type="number" id="txt3" name="text3" value="3">
+        </p>
+    <p id="demo5b"></p>
+</body>
+</html>
+   
+    <script> //1
+    function javaMathFunction() {
+        x = 10;
+        y = 5;
+        Addition = x + y;
+        Subtraction = x - y;
+        Multiplication = x * y;
+        Division = x / y;
+        return Addition + "<br>" + Subtraction + "<br>" + Multiplication + "<br>" + Division;
+    }
+    document.getElementById("demo1").innerHTML = javaMathFunction();
+    </script>
+    <br>
+    
+    <script> //2
+    function JavastringFunction() {
+       // Declare variables for first name and last name
+    let firstName = "Sergio";  // Replace this with your actual first name
+    let lastName = "Romero";   // Replace this with your actual last name
+    let fullName = firstName + " " + lastName; // Concatenate firstName and lastName to form the full name
+    return fullName; // Return the full name
+    }
+    document.getElementById("demo2").innerHTML = JavastringFunction();
+    </script>
+    <br>
+    
+    <script> //3
+    function JavaLetVarFunction() {
+    // Declare x with let and assign value 5
+    let x = 5;
+    // Declare y with var and assign value 10
+    var y = 10;
+    // Reassign x and y
+    x = 20;
+    y = 30;
+    return x + "<br>" + y;
+    }
+    document.getElementById("demo3").innerHTML = JavaLetVarFunction();
+    </script>
+    <br>
+    
+    <script> //4
+    function JavaCounterFunction() {
+    // Declare and initialize the counter variable
+    let counter = 0;
+
+    // Use a for loop to increment the counter 5 times
+    for (let i = 0; i < 5; i++) 
+    counter++;  // Increment counter using the ++ operator
+        return counter;
+    }
+    document.getElementById("demo4").innerHTML = JavaCounterFunction();
+    </script>
+    <br>
+    
+    <script> //5a
+    function JavaConversionCoercionFunction(){
+    var y = document.getElementById("txt1").value;
+    var z = document.getElementById("txt2").value;
+    var x = +y + +z; // Coerce y and z to numbers and add them
+    document.getElementById("demo5a").innerHTML = x;
+    } 
+    
+    </script>
+    <br>
+    
+    <script> //5b
+    function JavaConversionCoercionFunction2(){
+    const num = document.getElementById("txt3").value;
+    let text = num.toString() + " Years Old";
+    document.getElementById("demo5b").innerHTML = text;
+    }
+    </script>
+    
