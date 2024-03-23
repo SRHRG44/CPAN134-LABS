@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CPAN134 Lab 9<br> Simple Product Inventory Program</h1>
+    
+    <script>
+ // 1. Initialize empty inventory object
+const inventory = {};
+
+// 2. Function to add a product
+function addProduct(productId, name, quantity) {
+  // Check if product ID already exists
+  if (productId in inventory) {
+    console.log(`Product ID ${productId} already exists. Updating quantity.`);
+  } else {
+    console.log(`Adding product: ${name} (ID: ${productId})`);
+  }
+
+  // Update inventory with product information
+  inventory[productId] = {
+    name: name,
+    quantity: quantity
+  };
+}
+
+// 3. Function to display inventory
+function displayInventory() {
+  if (Object.keys(inventory).length === 0) {
+    console.log("Inventory is empty.");
+    return;
+  }
+
+  console.log("**Current Inventory**");
+  for (const productId in inventory) {
+    const product = inventory[productId];
+    console.log(`Product ID: ${productId}`);
+    console.log(`  Name: ${product.name}`);
+    console.log(`  Quantity: ${product.quantity}`);
+  }
+}
+
+// 4. Function to find a product
+function findProduct(productId) {
+  if (productId in inventory) {
+    const product = inventory[productId];
+    console.log(`Product ID: ${productId}`);
+    console.log(`  Name: ${product.name}`);
+    console.log(`  Quantity: ${product.quantity}`);
+  } else {
+    console.log(`Product with ID ${productId} not found.`);
+  }
+}
+
+// Example usage
+addProduct(123, "T-Shirt", 10);
+addProduct(456, "Mug", 5);
+addProduct(789, "Hat", 2);
+
+displayInventory();
+
+findProduct(123);
+findProduct(999);
+</script>
+</body>
+</html>
